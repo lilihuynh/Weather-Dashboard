@@ -75,3 +75,36 @@ $("#search-button").on("click", function (event) {
 
     // var queryURLuv= "http://api.openweathermap.org/data/2.5/uvi?lat={lat}&lon={lon}&appid={API key}
 });
+
+var retrievedCities = JSON.parse(localStorage.getItem("cities"));
+console.log(retrievedCities);
+
+function renderButtons() {
+    // Deleting the city buttons prior to adding new movie buttons
+    // if not, we will have repeat buttons)
+    $("#city-button").empty();
+    for (var i = 0; i < cities.length; i++) {
+        //create button element for retrievedCities
+        var cityButton = $("<button>");
+        //add class city (script for later click event) to each button
+        cityButton.addClass("city");
+        //add class button (css) to each button
+        cityButton.addClass("button");
+        //add data-name attribute to each city button
+        cityButton.attr("data-name", cities[i]);
+        //add text which is the city name from cities array to each city button
+        cityButton.text(cities[i]);
+        //append button to HTML
+        $("#city-button").append(cityButton);
+    };
+
+};
+
+//initial search will call renderButtons with using cities list, also save the new cities to local storage
+//then retrieve that list and save it to retrievedCities
+//if retrievedCities is not empty then call rendeButtons again when user refresh page
+//let cities = retrieveaCities because renderButtons used cities list
+if (retrievedCities) {
+    cities = retrievedCities;
+    renderButtons();
+};
