@@ -17,7 +17,7 @@ Github-page: [https://lillianhuynh.github.io/Weather-Dashboard/]
 * [Contact](#contact)
 
 ## About The Project
-![Project Screenshot](images/screenshot.png)
+![Project Screenshot](images/desktop.png)
 
 'Weather Dashboard' application was designed to provide an easy way to access accurate weather forecast information for users. 
 
@@ -46,7 +46,7 @@ git clone https://github.com/lillianhuynh/Weather-Dashboard
 
 | Desktop screen     | Mobile screen |
 |------------|------------|
-| <img src="images/length.png" width="400"> | <img src="images/special.png" width="400"> |
+| <img src="images/desktop.png" width="400"> | <img src="images/phone.png" width="400"> |
 
 You can start by entering a city name. Onces you click the search button, current forecast, 5 days forecast and UVindex will be generated and displayed. The searched cities will also be automatically saved.
 
