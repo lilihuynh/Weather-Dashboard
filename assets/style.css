@@ -16,3 +16,31 @@ header {
     margin-top: 15px;
     margin-left: 15px;
 }
+
+.red{
+    background-color:rgb(233, 29, 29);
+    color: white;
+}
+
+.green{
+    background-color: green;
+    color:white;
+}
+
+.yellow{
+    background-color: yellow;
+    color: black;
+}
+
+.orange{
+    background-color: orange;
+    color: black;
+}
+.purple{
+    background-color: rgb(128, 57, 128);
+    color: white;
+}
+
+.hide{
+    display: none;
+}
