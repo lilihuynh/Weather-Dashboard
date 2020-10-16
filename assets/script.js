@@ -43,7 +43,7 @@ $("#search-button").on("click", function (event) {
         var lat = response.coord.lat;
         console.log(lon);
         console.log(lat);
-        var UVquery = "http://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&" + "lon=" + lon + "&appid=ae114f10e0e43d04009e934a0983ff33";
+        var UVquery = "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&" + "lon=" + lon + "&appid=ae114f10e0e43d04009e934a0983ff33";
         $.ajax({
             url: UVquery,
             method: "GET"
@@ -180,7 +180,7 @@ function displayCityweather() {
         var lat = response.coord.lat;
         console.log(lon);
         console.log(lat);
-        var UVquery = "http://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&" + "lon=" + lon + "&appid=ae114f10e0e43d04009e934a0983ff33";
+        var UVquery = "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&" + "lon=" + lon + "&appid=ae114f10e0e43d04009e934a0983ff33";
         $.ajax({
             url: UVquery,
             method: "GET"
